@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>553</width>
+    <height>188</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Editar Lançamento</string>
+  </property>
+  <widget class="QPushButton" name="bt_salvar">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>69</y>
+     <width>90</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>Salvar!</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_id">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>82</y>
+     <width>61</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_data">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>82</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_descricao">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>142</y>
+     <width>281</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>60</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ID</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>60</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DATA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>120</y>
+     <width>271</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DESCRIÇÃO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>301</x>
+     <y>121</y>
+     <width>221</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CATEGORIA</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rb_pagamento">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>20</y>
+     <width>104</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Pagamento</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rb_recebimento">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Recebimento</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_valor">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>82</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>60</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>VALOR</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbox">
+   <property name="geometry">
+    <rect>
+     <x>301</x>
+     <y>143</y>
+     <width>231</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>rb_recebimento</tabstop>
+  <tabstop>rb_pagamento</tabstop>
+  <tabstop>line_id</tabstop>
+  <tabstop>line_data</tabstop>
+  <tabstop>line_valor</tabstop>
+  <tabstop>line_descricao</tabstop>
+  <tabstop>cbox</tabstop>
+  <tabstop>bt_salvar</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

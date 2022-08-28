@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>964</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CFP - Controle Financeiro Pessoal</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QRadioButton" name="rb_recebimento">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Recebimento</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rb_pagamento">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>104</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Pagamento</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bt_salvar">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>150</y>
+      <width>101</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 0);
+color: rgb(0, 0, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>Lançar!</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_saldo">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>560</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_data_2">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>560</y>
+      <width>51</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Saldo:</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>881</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>135</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DATA</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DESCRIÇÃO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CATEGORIA</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>VALOR</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>550</y>
+      <width>551</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 0, 255);
+font: 25 italic 8pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Desenvolvido por Giuliano Vianna - (65) 99622-3168</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>112</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="lb_data_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Categoria:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bt_categoria">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>100</y>
+      <width>101</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 0);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Cadastrar!</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_descricao">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Descrição:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_descricao">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>62</y>
+      <width>411</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>190</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);
+font: 25 italic 8pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Ex: 11.02 / 100.45 / 2548.00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_data">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Data:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_data">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>162</y>
+      <width>135</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="inputMask">
+     <string>00/00/0000</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_valor">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Valor:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_valor">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>162</y>
+      <width>135</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bt_editar">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>150</y>
+      <width>101</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 0);
+color: rgb(0, 0, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>Editar!</string>
+    </property>
+   </widget>
+   <zorder>lb_data</zorder>
+   <zorder>line_data</zorder>
+   <zorder>lb_valor</zorder>
+   <zorder>line_valor</zorder>
+   <zorder>label_2</zorder>
+   <zorder>lb_descricao</zorder>
+   <zorder>line_descricao</zorder>
+   <zorder>rb_recebimento</zorder>
+   <zorder>rb_pagamento</zorder>
+   <zorder>bt_salvar</zorder>
+   <zorder>line_saldo</zorder>
+   <zorder>lb_data_2</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>label</zorder>
+   <zorder>cbox</zorder>
+   <zorder>lb_data_3</zorder>
+   <zorder>bt_categoria</zorder>
+   <zorder>bt_editar</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>rb_recebimento</tabstop>
+  <tabstop>rb_pagamento</tabstop>
+  <tabstop>line_descricao</tabstop>
+  <tabstop>cbox</tabstop>
+  <tabstop>line_data</tabstop>
+  <tabstop>line_valor</tabstop>
+  <tabstop>bt_salvar</tabstop>
+  <tabstop>bt_categoria</tabstop>
+  <tabstop>line_saldo</tabstop>
+  <tabstop>tableWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
