@@ -2,7 +2,7 @@
 
 # Em desenvolvimento.
 
-Aplicação desenvolvida em Python e QT5.
+Aplicação desenvolvida em Python, QT5 e Sqlite3.
 
 ![image](https://user-images.githubusercontent.com/101942554/187312263-fb78d83c-6d40-4914-9dad-2e641b0d7c28.png)
 
