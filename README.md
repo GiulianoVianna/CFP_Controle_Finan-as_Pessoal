@@ -2,4 +2,4 @@
 
 # Em desenvolvimento.
 
-Aplicação desenvolvido em Python e QT5.
+Aplicação desenvolvida em Python e QT5.
