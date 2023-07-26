@@ -206,7 +206,11 @@ def consulta_dados():
 
         with sqlite3.connect("cfp.db") as banco:
             cursor = banco.cursor()
-            cursor.execute("SELECT * FROM movimentos ORDER BY data DESC")
+            cursor.execute(
+                "SELECT *, strftime('%Y-%m-%d', "
+                "substr(data,7,4) || '-' || substr(data,4,2) || '-' || substr(data,1,2)) "
+                "as data_ordenavel FROM movimentos ORDER BY data_ordenavel DESC"
+            )
             dados_lidos = cursor.fetchall()
 
         tela.tableWidget.setRowCount(len(dados_lidos))
