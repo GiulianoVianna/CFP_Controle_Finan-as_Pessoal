@@ -14,6 +14,10 @@ Aplicação desenvolvida em Python, QT5 e Sqlite3.
 * Interface gráfica criada com Qt Designer para interagir com o usuário
 
 
+https://github.com/GiulianoVianna/CFP_Controle_Finan-as_Pessoal/assets/101942554/839760f2-d369-4b3b-8b3e-046a06253397
+
+
+
 ![image](https://github.com/GiulianoVianna/CFP_Controle_Finan-as_Pessoal/assets/101942554/2be20fc4-b18f-48e2-8a2e-dfe016476149)
 
 
