@@ -1,4 +1,4 @@
-# CFP - Controle de Finanças Pessoal.
+# CFP - Controle de Finanças Pessoal - Em Desenvolvimento.
 
 # Em desenvolvimento.
 
