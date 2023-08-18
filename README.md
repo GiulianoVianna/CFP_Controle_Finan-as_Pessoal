@@ -2,7 +2,7 @@
 
 # Em desenvolvimento.
 
-Aplicação desenvolvida em Python, QT5 e Sqlite3.
+Controle financeiro pessoal devenvolvido em python com pyqt5 e sqlite3
 
 * Cadastro de categorias de lançamentos financeiros (receitas, despesas, etc)
 * Inserção de lançamentos contendo: data, descrição, categoria e valor
